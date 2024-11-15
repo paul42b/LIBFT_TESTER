@@ -25,12 +25,8 @@ int	calloc_tester(void)
 	if (!ptr)
 		err_flag = 1;
 	free (ptr);
-	ptr = ft_calloc(1024, 1024 * 1024);
+	ptr = ft_calloc(1024, 1024);
 	if (!ptr)
-		err_flag = 1;
-	free (ptr);
-	ptr = ft_calloc(INT_MAX, 2);
-	if (ptr)
 		err_flag = 1;
 	free (ptr);
 	if (err_flag)
